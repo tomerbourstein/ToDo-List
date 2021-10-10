@@ -1,0 +1,295 @@
+body {
+  background: url("images/bg-desktop-light.jpg") no-repeat hsl(0, 0%, 98%);
+  font-size: 1.125rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: hsl(235, 19%, 35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Section */
+header {
+  margin: 8% 0 2rem;
+  width: 35.125rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* Main Card Section */
+.newTodo {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  padding: 15px 20px;
+}
+
+.mainCard {
+  border: none;
+  box-shadow: 0 0 20px -10px grey;
+}
+
+.form-control {
+  background-color: #fff;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  color: hsl(234, 39%, 85%);
+  opacity: 80%;
+}
+
+.card {
+  background-color: #fff;
+  width: 35.125rem
+}
+.itemIsChecked {
+  text-decoration: line-through;
+  opacity: 30% !important;
+}
+.checkboxRoundAndStyle {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1.5px solid hsl(236, 33%, 92%);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.checkboxRoundAndStyle:hover {
+  border: 1.5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.checkboxRoundAndStyle:checked {
+  background: url("images/icon-check.svg") no-repeat center, linear-gradient(to left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: hsl(236, 33%, 92%);
+  background-color: #fff;
+  color: hsl(235, 19%, 35%);
+  opacity: 80%;
+  padding: 15px 20px;
+}
+
+.innerDivGroup {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.crossImage {
+  width: 15px;
+  background-color: #fff;
+}
+
+.crossImageNoDisplay{
+  display: none;
+}
+.card-footer {
+
+  font-size: 0.8rem;
+  opacity: 80%;
+}
+
+.nav-link {
+  color: hsl(234, 39%, 85%) !important;
+  padding: 8px 12px;
+}
+
+.nav-link:hover {
+  color: hsl(235, 19%, 35%) !important;
+}
+
+.filter-class {
+  font-weight: 700;
+}
+
+.filterPressed {
+  color: hsl(220, 98%, 61%) !important;
+}
+
+.dragInstruction {
+  font-size: 0.7rem;
+  color: hsl(235, 19%, 35%) !important;
+  opacity: 60%;
+  margin: 2rem 0;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  color: hsl(235, 19%, 35%) !important;
+  opacity: 80%;
+}
+
+/* Media Query Section  */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: url("images/bg-desktop-dark.jpg") no-repeat hsl(235, 21%, 11%);
+  }
+
+  .form-control {
+    background-color: hsl(235, 24%, 19%);
+  }
+
+  .form-control:focus {
+    background-color: hsl(235, 24%, 19%);
+  }
+
+  .card {
+    border-bottom: 0.1px solid hsl(233, 14%, 35%);
+    background-color: hsl(235, 24%, 19%);
+  }
+
+  .list-group-item {
+    color: hsl(234, 39%, 85%);
+    background-color: hsl(235, 24%, 19%);
+    border-color: hsl(233, 14%, 35%);
+  }
+
+  .mainCard {
+    border: none;
+  }
+
+  .checkboxRoundAndStyle {
+    background-color: hsl(235, 24%, 19%);
+    border: 1.5px solid hsl(233, 14%, 35%);
+  }
+
+  .nav-link {
+    color: hsl(234, 11%, 52%) !important;
+  }
+
+  .nav-link:hover {
+    color: hsl(234, 39%, 85%) !important;
+  }
+
+  .dragInstruction {
+    color: hsl(234, 11%, 52%) !important;
+    opacity: 80%;
+  }
+
+  .attribution {
+    color: hsl(234, 11%, 52%) !important;
+    opacity: 80%;
+  }
+
+  .crossImage {
+    background-color: hsl(235, 24%, 19%);
+    cursor: pointer;
+  }
+}
+
+.buttonsSectionMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url("images/bg-mobile-light.jpg") no-repeat hsl(0, 0%, 98%);
+    background-size: contain;
+    background-position: top;
+  }
+
+  header {
+    width: 20rem;
+    margin: 15% 0 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .toggleMode {
+    width: 1.25rem;
+  }
+
+  .card {
+    width: 20rem;
+  }
+
+  .newTodo {
+    padding: 5px 20px;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .list-group-item {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+.changeSize {
+width: 0.9rem;
+}
+
+.crossImageNoDisplay {
+  display: flex;
+}
+  .footerSectionMobile {
+    width: 17.875rem;
+  }
+
+  .card-footer {
+    /* width: 17.875rem; */
+    font-size: 0.7rem;
+    padding: 0.3rem 1rem;
+    border-bottom: none;
+
+  }
+
+  .filter-class {
+    display: none;
+  }
+
+  .buttonsSectionMobile {
+    display: flex;
+    border: none;
+    box-shadow: 0 0 20px -10px grey;
+    margin: 20px 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .nav-link:hover {
+    color: hsl(220, 98%, 61%) !important;
+  }
+
+  .filterContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dragInstruction {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (prefers-color-scheme:dark) and (max-width: 600px) {
+body {
+  background: url("images/bg-mobile-dark.jpg") no-repeat hsl(235, 21%, 11%);
+}
+.buttonsSectionMobile {
+  border-bottom: 0.1px solid hsl(233, 14%, 35%);
+  border-top: 0.1px solid hsl(233, 14%, 35%);
+}
+ }

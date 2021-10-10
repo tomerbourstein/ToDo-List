@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>TODO app Tomer</title>
+</head>
+
+<body>
+
+
+
+
+  <header>
+    <h1>Todo</h1>
+    <img class="toggleMode" src="images/icon-sun.svg" alt="night or day mode icon.">
+  </header>
+
+  <main class="">
+
+
+    <div class="card form-row newTodo" >
+      <input id="newAssignment" class="form-control shadow-none border-0" type="text" placeholder="Create a new todo...">
+    </div>
+
+
+
+    <div class="card mainCard" >
+
+      <div class="card assignmentList">
+        <ul id="list" class=" list-group list-group-flush ">
+          <!-- <li id="assign0" class=" list-group-item assignmentDiv">
+            <div class="innerDivGroup">
+              <input class="checkboxRoundAndStyle" type="checkbox" name="checkbox">
+              <span class="assigmentText countLi">new assigment to do.</span>
+            </div>
+            <a id="image0" class="crossImage crossImageNoDisplay" href="javascript:void(0)"> <img  src="images/icon-cross.svg" alt="delete todo button."> </a>
+          </li> -->
+
+        </ul>
+
+
+        <div class="card card-footer  buttonsSection">
+          <ul class="nav justify-content-between footerSectionMobile">
+            <li class="nav-item">
+              <a class="nav-link disabled footer-text howManyLeft" href="#">
+                No items left
+              </a>
+            </li>
+            <div class="nav justify-content-center filterContainer">
+              <li class="nav-item">
+                <a class="nav-link filter-class footer-text allState" href="javascript:void(0)">All</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link filter-class footer-text activeState" href="javascript:void(0)">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link filter-class footer-text clickToRemove" href="javascript:void(0)">Completed</a>
+              </li>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link footer-text completedCounter" href="javascript:void(0)">Clear Completed</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card buttonsSectionMobile">
+      <ul class="nav justify-content-center filterContainerMobile">
+
+
+          <li class="nav-item">
+            <a class="nav-link filter-classMobile footer-text allState" href="javascript:void(0)">All</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link filter-classMobile footer-text activeState" href="javascript:void(0)">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link filter-classMobile footer-text clickToRemove" href="javascript:void(0)">Completed</a>
+          </li>
+
+
+      </ul>
+    </div>
+
+  </main>
+  <div class="dragInstruction">
+    Drag and drop to reorder list
+  </div>
+
+  <div class="attribution">
+    Coded by Tomer Bourstein.
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
