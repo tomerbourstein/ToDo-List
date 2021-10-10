@@ -101,7 +101,7 @@ function boxCounter() {
 
 // event listener on keyprees if ENTER key that calls createNewDiv(), prevents clicking ENTER again, clearing the input.
 // else giving inputValue the new event value and waiting for ENTER keyprees.
-$("#newAssignment").keypress(function(event) {
+$("#newAssignment").keydown(function(event) {
   if (event.keyCode === 13) {
     createNewDiv(inputValue);
     event.currentTarget.value = "";
